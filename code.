@@ -1,0 +1,33 @@
+def get_yes_no(prompt):
+    response = input(prompt).strip().lower()
+    while response not in ['yes', 'no']:
+        response = input("Please answer with 'yes' or 'no': ").strip().lower()
+    return response == 'yes'
+
+
+def neuro_symptom_checker():
+    print("Welcome to NeuroSymptom Checker!")
+
+    has_headache = get_yes_no("Do you have a headache? (yes/no): ")
+    has_visual_disturbance = get_yes_no("Do you have visual disturbances (e.g., flashing lights, blurred vision)? (yes/no): ")
+    has_nausea = get_yes_no("Do you have nausea or vomiting? (yes/no): ")
+    has_motor_weakness = get_yes_no("Do you have any limb weakness? (yes/no): ")
+    has_loss_of_consciousness = get_yes_no("Have you experienced a loss of consciousness or blackouts? (yes/no): ")
+    has_seizures = get_yes_no("Have you had any seizures or convulsions? (yes/no): ")
+
+    print("\n🧠 Possible condition:")
+
+    if has_headache and has_visual_disturbance and has_nausea:
+        print("Migraine with aura")
+    elif has_seizures and has_loss_of_consciousness:
+        print("Possible Epilepsy")
+    elif has_headache and has_motor_weakness and not has_visual_disturbance:
+        print("Possible Stroke — seek immediate care")
+    elif has_headache and not (has_nausea or has_motor_weakness or has_seizures):
+        print("Tension-type headache")
+    else:
+        print("No clear pattern — further clinical evaluation advised")
+
+
+if __name__ == "__main__":
+    neuro_symptom_checker()
