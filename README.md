@@ -17,3 +17,5 @@ Tension-type headache
 Suspected stroke
 
 Nonspecific patterns prompting clinical evaluation.
+
+This tool is an elementary prototype intended solely for educational and exploratory purposes. It does not constitute medical advice, diagnosis, or treatment. Users are strongly advised to consult a licensed physician for any health-related concerns. No clinical decisions should be made based on this program’s output.
