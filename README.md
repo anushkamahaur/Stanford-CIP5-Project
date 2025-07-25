@@ -6,7 +6,7 @@ Why I Built This:
 As a medical student with a passion for neurosurgery and an emerging interest in computational medicine, I wanted to explore how simple algorithms could emulate early clinical reasoning. 
 
 What It Does:
-Upon launch, the user is guided through a series of clinically relevant yes/no questions — headache, visual disturbances, motor weakness, seizures, etc. Based on their responses, the program suggests a possible neurological condition using a basic ruleset derived from common clinical pathways. The current logic supports conditions such as:
+Upon launch, the user is guided through a series of clinically relevant yes/no questions- headache, visual disturbances, motor weakness, seizures, etc. Based on their responses, the program suggests a possible neurological condition using a basic ruleset derived from common clinical pathways. The current logic supports conditions such as:
 
 Migraine with aura
 
